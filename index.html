@@ -18,7 +18,6 @@
         <div class="mid-container">
           <div class="L-divide">
             <img src="fblogo.jpg" class="fb-logo" />
-            <!-- <p class="fbfont">facebook</p> -->
             <p class="recent">Recent logins</p>
             <p class="recent-line">Click your picture or add an account.</p>
             <div class="card">
@@ -30,33 +29,34 @@
             <div class="card2">
               <img src="" class="card-img2" />
               <div class="name2">
-                <p>Dipen</p>
+                <p>Add Account</p>
               </div>
             </div>
           </div>
           <div class="R-divide">
-            <form action="index.html">
-              <input
-                type="email"
-                placeholder="Email address or phone number"
-                class="e-mail"
-                autofocus="autofocus"
-              />
+            <form action="post">
+              <input type="email" placeholder="Email address or phone number" class="e-mail" autofocus="autofocus"/>
               <input type="password" placeholder="Password" class="password" />
-              <button class="login-btn" onclick="openForm()">Log in</button>
-              <!-- -------------------------------------------------------------------------------------------- -->
+              <button class="login-btn">Log in</button>
+              <a class="login-link" href="https://www.google.com/"
+                >Forgotten password?</a
+              >
+              <hr class="hr" />
+            </form>
+            <div class="create">
+              <button class="create-btn"  onclick="openForm()">Create New Account</button>
               <div class="pop-form" id="floatform">
                 <form>
-                  <p>Sign Up</p>
-                  <p>It's quick and easy</p>
-                  <input type="text" placeholder="First name" />
-                  <input type="text" placeholder="Surname" />
-                  <input
-                    type="email"
-                    placeholder="Mobile number or Email address"
+                  <p class="top-sign">Sign Up</p>
+                  <img src="cross.png" class="cross" onclick="closeForm()">
+                  <p class="line-two">It's quick and easy.</p>
+                  <hr class="hr2">
+                  <input type="text" placeholder="First name" class="fname"/>
+                  <input type="text" placeholder="Surname" class="sname"/>
+                  <input type="email" placeholder="Mobile number or email address" class="mob" autofocus="autofocus"
                   />
-                  <br>
-                  <input type="password" placeholder="Password" />
+                  
+                  <input type="password" placeholder="New password"  class="newpass"/>
                   <br>
                   <label>Date of Birth</label>
                   <br>
@@ -202,20 +202,12 @@
                   <label for="female">Female</label>
                   <input type="radio" name="gender" value="Custom" id="custom">
                   <label for="custom">Custom</label>
-                  <p>People who use our service may have uploaded your contact information to Facebook. Learn more.</p>
-                  <p>By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+                  <p class="small">People who use our service may have uploaded your contact information to Facebook. Learn more.</p>
+                  <p class="small">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
                   <button>Sign Up</button>
-                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  <br>
                 </form>
               </div>
-              <!-- -------------------------------------------------------------------------------------------- -->
-              <a class="login-link" href="https://www.google.com/"
-                >Forgotten password?</a
-              >
-              <hr class="hr" />
-            </form>
-            <div class="create">
-              <button class="create-btn">Create New Account</button>
             </div>
             <div class="last-line">
               <p>
